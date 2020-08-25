@@ -17,24 +17,31 @@
     <h3>Your Bank Account</h3>
   </div>
   <hr>
-  <form class="form-control">
+  <form id = createAccount>
+  <div class="form-control">
     <div class='card'>
       <div class='card-title'>
         <h3>Add an account:</h3>
       </div>
       <div class="card-body">
         <label for='customername'>Customer Name</label>
-        <input type='text' name='customername' id='customername'>
+        <input type='text' name='customername' id='customer-name'>
         <br>
         <label for='balance'>Starting Balance</label>
-        <input type='text' name='startingbalance' id='startingbalance'>
+        <input type='text' name='startingbalance' id='starting-balance'>
         <br>
-        <button type="button" class="btn btn-primary" input="submit">Create Account</button>
+        <button type="submit" class="btn-primary">Create Account</button>
       </div>
+    </div>
+  </div>
   </form>
+  
+  <div class = "container">
+    <div class = "card">
+      <div id="balance"></div>
+    </div>
   </div>
-  </div>
-  <div class="balance"></div>
+  
 </body>
 
 </html>
