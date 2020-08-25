@@ -27,14 +27,25 @@ function BankAccount(name, balance) {
 }
 
 //User Interface Logic
+function attachContactListeners() {
+  $("#deposit").on("click",".deposit",function(){
+    let deposit = $("input#depositamount").val();
+    theaccount.deposit(deposit);
+    console.log(theaccount.balance);
+})
 
+
+
+
+}
 $(document).ready(function(){
   $("form#createAccount").submit(function(event){
 event.preventDefault();
 const name = $('input#customer-name').val();
 let balance = $('input#starting-balance').val();
-var theaccount = new BankAccount(name,balance);
-console.log(theaccount.balance);
+let theaccount = new BankAccount(name,balance);
+$("#balance").html(theaccount.balance);
+// console.log(theaccount.balance+theaccount.name);
 
   })
 });
