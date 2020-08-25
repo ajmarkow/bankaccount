@@ -29,5 +29,10 @@ function BankAccount(name,balance) {
 }
 //User Interface Logic
 $document.ready(function(){
+ $("#createaccount").submit(function(event){
+     const startingbalance = $("#startingbalance").val();
+     const customername = $("#customername").val();
+
+ })   
 
 });
