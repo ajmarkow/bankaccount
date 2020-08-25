@@ -26,8 +26,6 @@ function BankAccount(name, balance) {
   this.balance = balance;
 }
 
-
-
 //User Interface Logic
 
 $(document).ready(function(){
@@ -40,33 +38,3 @@ console.log(theaccount.balance);
 
   })
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// $(document).ready(function () {
-//   $("form#createAccount").submit(function (event) {
-//     event.preventDefault();
-//     const name =$('input#customer-name').val();
-//     alert(name);
-//     let balance = $('input#starting-balance').val();
-//   });
-// });
-// const startingbalance = $("input#startingbalance").val();
-//     alert(startingbalance);
-//     const customername = $("input#customername").val();
-//     alert(customername);
-//     BankAccount.addAccount(customername,startingbalance)
-//     console.log(BankAccount.balance);
